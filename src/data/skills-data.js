@@ -8,16 +8,30 @@ export const skillsData = [
     'Next JS',
     // 'Node JS',
     'Bootstrap',
-    'Go',
     'Typescript',
     'Figma',
     // 'Ubuntu',
     'MongoDB',
     'Tailwind',
+    "Strapi",
     'MySQL',
     'PostgreSQL',
     'MaterialUI',
-    'Firebase'
+    'Firebase',
+    "React Native",
+    "Open AI",
+    "Block Chain",
+    "D3.Js",
+    "AWS",
+    "Azure",
+    "Jenkins",
+    "Cypress",
+    "React Testing Libraries",
+    "GraphQL",
+    "Nexus and Prisma",
+    "Google Maps and Advanced Apis",
+    "RollUp",
+    "Webpack"
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

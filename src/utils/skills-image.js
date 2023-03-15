@@ -72,6 +72,8 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
+import Cypress from "../assets/svg/skills/cypress.png";
+//import D3Js from "../assets/svg/skills/d3js";
 
 import canva from '../assets/svg/skills/canva.svg'
 
@@ -227,6 +229,14 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'cypress':
+        return Cypress;
+        case 'reactnative':
+        return react;
+        case 'd3js':
+            return '';
+            case 'blockchain':
+                return '';
         default:
             break;
     }

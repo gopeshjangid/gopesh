@@ -1,23 +1,38 @@
 export const experienceData = [
     {
         id: 1,
-        company: 'Teton Private Limited',
-        jobtitle: 'Software Engineer I',
-        startYear: 'Jan 2022',
+        company: 'Trianz',
+        jobtitle: 'Senior Lead consultant',
+        startYear: 'March 2022',
         endYear: 'Present'
     },
     {
         id: 2,
-        company: 'Fiverr(freelance)',
-        jobtitle: 'Full-Stack Developer',
-        startYear: 'Jun 2021',
-        endYear: 'Jan 2022'
+        company: 'R systems',
+        jobtitle: 'Senior Software Engineer',
+        startYear: 'August 2020',
+        endYear: 'March 2022'
     },
+    
     {
         id: 3,
-        company: 'Learning New Technology For Everyday',
-        jobtitle: 'Self Learning',
+        company: 'Codersbrain tech',
+        jobtitle: 'Senior Software Engineer',
         startYear: '2018',
-        endYear: 'Present'
+        endYear: '2020'
+    },
+    {
+        id: 4,
+        company: 'KelltonTech',
+        jobtitle: 'Senior Software Engineer',
+        startYear: '2016',
+        endYear: '2018'
+    },
+    {
+        id: 5,
+        company: 'Damco Solutions',
+        jobtitle: 'Software Engineer',
+        startYear: '2012',
+        endYear: '2016'
     },
 ]

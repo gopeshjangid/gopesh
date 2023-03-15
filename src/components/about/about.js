@@ -21,7 +21,7 @@ function About() {
                 <div className={styles.aboutBody}>
                     <div className={styles.aboutDescription}>
                         <h2 style={{ color: theme.primary }}>{aboutData.title}</h2>
-                        <p style={{ color: theme.tertiary }}>{aboutData.description1}<br /><br />{aboutData.description2}</p>
+                        <p style={{ color: theme.tertiary }}>{aboutData.description1}<br /><br />{aboutData.description2} <br /><br />{aboutData.description3}</p>
                     </div>
                     <div className={styles.aboutAnimation}>
                         <AnimationLottie animationPath={codings} />
