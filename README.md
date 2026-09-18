@@ -1,430 +1,170 @@
-# Developer Portfolio
+# Gopesh Jangid
 
-## Want to create a professional portfolio but cannot figure out how to? Use Developer Portfolio and create your own personalised portfolio today! our easily customisable, user friendly website is designed to cater to developers and freelancers a like.
+**AI Product Engineer · Solution Architect · Senior Software Engineer**
 
----
+I design and ship production-grade AI products across **mobile, web, and cloud** — from LLM/RAG backends and agentic workflows to native Android experiences, on-device inference, billing, observability, and reliable AWS infrastructure.
 
-# Demo :movie_camera:
-
-![](https://res.cloudinary.com/doer1ffjl/image/upload/v1663654797/Portfolio/portfolio_ywlcqv.gif)
-
-## View live demo [here](https://abusaid.netlify.app/).
+I bring **13+ years of software engineering experience** and currently focus on turning AI capabilities into products that are reliable, scalable, secure, measurable, and useful in the real world.
 
 ---
 
-## Table of Contents :scroll:
+## What I build
 
-- [Sections](#sections-bookmark)
-- [Demo](#demo-movie_camera)
-- [Installation](#installation-arrow_down)
-- [Getting Started](#getting-started-dart)
-- [Folder Structure](#folder-structure-open_file_folder)
-- [Usage](#usage-joystick)
-- [Hosting](#hosting-globe_with_meridians)
-- [SEO](#seo-spider)
-- [Packages Used](#packages-used-package)
-- [APIs Used](#apis-used-world_map)
-- [Fonts and Images](#fonts-and-images-performing_arts)
-- [Upcoming Features](#upcoming-features-construction)
-- [Contributors](#contributors-man_technologistwoman_technologist)
+### AI-native mobile applications
+I build mobile experiences where AI is part of the product workflow rather than a separate chatbot.
 
----
+Recent engineering work includes:
 
-# Sections :bookmark:
+- Native Android development with **Kotlin + Jetpack Compose**
+- Real-time AI response streaming with resilient client state management
+- Context-aware follow-up actions and structured AI interactions
+- Long-running AI generation workflows with progress tracking
+- **AppSync GraphQL subscriptions** for real-time backend events
+- Local-first caching and synchronization patterns
+- Secure authentication with **AWS Cognito**
+- **Google Play Billing** and durable purchase attribution
+- Privacy-aware analytics and crash observability
+- Cross-platform React Native applications with AI-assisted matching, chat, voice, moderation, and real-time communication
 
-- HOME
-- ABOUT
-- RESUME
-  - EDUCATION
-  - SKILLS
-  - EXPERIENCE
-  - PROJECTS
-- BLOG
-- CONTACTS
+### Production LLM, RAG & agent systems
+I work on AI systems that need to behave reliably outside of demos.
 
----
+Areas I have built and worked on include:
 
-# Installation :arrow_down:
+- Retrieval-Augmented Generation (RAG)
+- Query classification and routing
+- Knowledge ingestion pipelines
+- Semantic retrieval and reranking
+- Structured LLM contracts
+- Automated evaluation and verification
+- Bounded repair and failure recovery
+- Streaming AI responses
+- Long-running asynchronous AI workflows
+- Cost, latency, and reliability optimization
+- Agent/tool orchestration
 
-### You will need to download Git and Node to run this project
+### AWS cloud & serverless architecture
+I design cloud systems with an emphasis on simplicity, scalability, security, and operational reliability.
 
-- [Git](https://git-scm.com/downloads)
-- [Node](https://nodejs.org/en/download/)
+**AWS:** Bedrock · Lambda · AppSync · DynamoDB · Cognito · S3 · SQS · Amplify Gen2 · CloudWatch
 
-## Also check [this](https://reactjs.org/docs/create-a-new-react-app.html) out if you are new to react.
+I have worked across event-driven workflows, GraphQL APIs, authentication, background generation, real-time subscriptions, storage, and AI inference pipelines.
 
-#### Make sure you have the latest version of both Git and Node on your computer.
+### Edge & on-device AI
+I am actively exploring the shift from cloud-only AI toward **local, private, low-latency inference**.
 
-```
-node --version
-git --version
-```
+Recent work includes running **Gemma models locally in the browser with Google LiteRT-LM + WebGPU**, with explicit capability boundaries and no hidden cloud fallback.
 
-<br />
+- [LiteRT / WebGPU local AI experiment](https://github.com/gopeshjangid/google-liteRT.js)
 
-# Getting Started :dart:
+### Document intelligence
+I build pipelines that turn unstructured documents into structured data suitable for AI and software systems.
 
-### Fork and Clone the repo
+- PDF / Office / image ingestion
+- Structured JSON extraction
+- LLM and RAG-ready data preparation
+- Validation-oriented conversion workflows
 
-#### To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
-
-```
-git clone hhttps://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
-cd developer-portfolio
-```
-
-### Install packages from the root directory
-
-```
-npm install
-```
-
-#### or
-
-```
-yarn install
-```
-
-### Start the development server
-
-```
-npm run dev
-```
-
-#### or
-
-```
-yarn dev
-```
+- [Structured document conversion experiment](https://github.com/gopeshjangid/all-converto-json)
 
 ---
 
-# Folder Structure :open_file_folder:
+## Problems I care about solving
 
-```bash
-├── LICENSE
-├── README.md
-├── package-lock.json
-├── package.json
-├── public
-│   ├── _redirects
-│   ├── favicon.ico
-│   ├── favicon.png
-│   ├── favicon512.png
-│   ├── index.html
-│   ├── manifest.json
-│   └── robots.txt
-├── src
-│   ├── App.css
-│   ├── App.js
-│   ├── assets
-│   │   ├── fonts
-│   │   │   └── Bestermind
-│   │   │       └── BestermindRegular.ttf
-│   │   ├── lottie
-│   │   │   └── coding.json
-│   │   │   └── development.json
-│   │   │   └── education.json
-│   │   └── svg
-│   │       ├── about
-│   │       ├── contacts
-│   │       ├── education
-│   │       ├── experience
-│   │       ├── projects
-│   │       ├── skills
-│   │       └── Social
-│   ├── components
-│   │   ├── About
-│   │   │   ├── About.css
-│   │   │   └── About.js
-│   │   ├── BackToTop
-│   │   │   ├── BackToTop.css
-│   │   │   └── BackToTop.js
-│   │   ├── Blog
-│   │   │   ├── Blog.css
-│   │   │   ├── Blog.js
-│   │   │   └── SingleBlog
-│   │   │       ├── SingleBlog.css
-│   │   │       └── SingleBlog.js
-│   │   ├── Contacts
-│   │   │   ├── Contacts.css
-│   │   │   └── Contacts.js
-│   │   ├── Education
-│   │   │   ├── Education.css
-│   │   │   ├── Education.js
-│   │   │   └── EducationCard.js
-│   │   ├── Experience
-│   │   │   ├── Experience.css
-│   │   │   ├── Experience.js
-│   │   │   └── ExperienceCard.js
-│   │   ├── Landing
-│   │   │   ├── Landing.css
-│   │   │   └── Landing.js
-│   │   ├── Navbar
-│   │   │   ├── Navbar.css
-│   │   │   └── Navbar.js
-│   │   ├── Projects
-│   │   │   ├── Projects.css
-│   │   │   ├── Projects.js
-│   │   │   └── SingleProject
-│   │   │       ├── SingleProject.css
-│   │   │       └── SingleProject.js
-│   │   ├── Skills
-│   │   │   ├── Skills.css
-│   │   │   └── Skills.js
-│   │   ├── Animation
-│   │   └── index.js
-│   ├── contexts
-│   │   └── ThemeContext.js
-│   ├── data
-│   │   ├── aboutData.js
-│   │   ├── blogData.js
-│   │   ├── contactsData.js
-│   │   ├── educationData.js
-│   │   ├── experienceData.js
-│   │   ├── headerData.js
-│   │   ├── projectsData.js
-│   │   ├── skillsData.js
-│   │   ├── socialsData.js
-│   │   └── themeData.js
-│   ├── index.css
-│   ├── index.js
-│   ├── pages
-│   │   ├── Blog
-│   │   │   ├── BlogPage.css
-│   │   │   └── Index.js
-│   │   ├── Home
-│   │   │   └── Index.js
-│   │   ├── Project
-│   │   │   ├── ProjectPage.css
-│   │   │   └── Index.js
-│   │   └── index.js
-│   ├── reportWebVitals.js
-│   ├── theme
-│   │   ├── images.js
-│   │   └── theme.js
-│   └── utils
-│       ├── ScrollToTop.js
-│       └── skillsImage.js
-└── package.json
-```
+I am especially interested in engineering problems where AI meets production constraints:
+
+- How do we make AI-generated outputs **reliable and verifiable**?
+- How do we safely operate **agentic and autonomous workflows**?
+- How do we reduce hallucination and retrieval errors in RAG systems?
+- How do we build AI experiences that remain responsive under long-running generation?
+- How do we move suitable inference **on-device** for privacy, latency, offline reliability, and cost?
+- How do we give AI systems strong observability without leaking sensitive user data?
+- How do we integrate AI into mobile products without degrading UX, battery, security, or maintainability?
 
 ---
 
-# Usage :joystick:
+## Current focus
 
-### Customize your details for each component in `src/data` [folder](https://github.com/hhhrrrttt222111/developer-portfolio/tree/master/src/data).
+**AI-native Android & Mobile**
+- Intelligent Android applications
+- On-device and hybrid inference
+- Streaming AI UX
+- Local-first application architecture
 
-Eg:
+**Agentic AI**
+- Tool-using agents
+- Agent reliability and security
+- Human/agent workflows
+- MCP and emerging agent interoperability
 
-```javascript
-export const headerData = {
-  name: "-- YOUR NAME --",
-  title: "-- YOUR TITLE --",
-  desciption: "-- DESCRIPTION --",
-  image: "-- IMAGE --",
-  resumePdf: "",
-};
+**AI Platform Engineering**
+- RAG and knowledge systems
+- Evaluation and verification
+- Structured outputs
+- Observability, reliability, and cost controls
 
-// You can also import image and PDF from assets as shown below
-
-import resume from "../assets/pdf/resume.pdf";
-import profileImg from "../assets/png/profileImg";
-
-export const headerData = {
-  name: "-- YOUR NAME --",
-  title: "-- YOUR TITLE --",
-  desciption: "-- DESCRIPTION --",
-  image: profileImg,
-  resumePdf: resume,
-};
-```
+**AI-assisted Software Engineering**
+- Coding agents
+- Testing and regression safety
+- Agent governance and secure execution
+- Reliable AI-generated software workflows
 
 ---
 
-#### Data for each component is divided into respective files.
+## Engineering approach
 
-> #### Choose your favourite font from [`src/App.css`](https://github.com/said7388/developer-portfolio/blob/main/src/App.css)
+I prefer systems that are understandable, measurable, and maintainable.
 
-> #### About You - [`src/data/aboutData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/aboutData.js)
+**Correctness over cleverness**  
+**Evidence over assumptions**  
+**Reliability over impressive demos**  
+**Simple architecture over unnecessary complexity**  
+**Security and observability by design**
 
-> #### Education details - [`src/data/educationData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/educationData.js)
-
-> #### Enter your Projects - [`src/data/projectsData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/projectsData.js)
-
-> #### Add your Skills - [`src/data/skillsData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/skillsData.js)
-
-> #### Experience - [`src/data/experienceData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/experienceData.js)
-
-> #### Your Blogs and Articles - [`src/data/blogData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/blogData.js)
-
-> #### Contact Details - [`src/data/contactsData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/contactsData.js)
-
-> #### Social Media Profiles - [`src/data/contactsData.js`](https://github.com/said7388/developer-portfolio/blob/main/src/data/socialsData.js)
-
-```javascript
-// EXAMPLE
-export const educationData = [
-  {
-    id: 1,
-    institution: "-- INSTITUTION NAME --",
-    course: "-- COURSE NAME --",
-    startYear: "2017",
-    endYear: "2019",
-  },
-  //
-];
-```
+When AI is involved, I treat the model as one part of the system — not the system itself.
 
 ---
 
-### Instructions and format for each section can be found inside the data files.
+## Core stack
 
-<br />
+**AI / LLM**  
+Agentic AI · RAG · LLM orchestration · evaluation · verification · embeddings · semantic retrieval · on-device AI
 
-# Hosting :globe_with_meridians:
+**Mobile**  
+Kotlin · Jetpack Compose · Android · React Native · Google Play Billing · Room · real-time streaming
 
-## Netlify
+**Cloud / Backend**  
+AWS Bedrock · Lambda · AppSync · DynamoDB · Cognito · S3 · SQS · Amplify Gen2 · GraphQL · REST
 
-|                Site                 |                                                     Docs                                                     |                          Demo                          |
-| :---------------------------------: | :----------------------------------------------------------------------------------------------------------: | :----------------------------------------------------: |
-| [Netlify](https://www.netlify.com/) | [3 ways to deploy React apps to Netlify](https://blog.logrocket.com/3-ways-to-deploy-react-apps-to-netlify/) | [Youtube](https://www.youtube.com/watch?v=sGBdp9r2GSg) |
+**Web / Platform**  
+TypeScript · JavaScript · React · Next.js · Node.js · Python
 
-## Firebase
-
-|                         Site                         |                                                           Docs                                                           |                          Demo                          |
-| :--------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------: |
-| [Firebase](https://firebase.google.com/docs/hosting) | [Deploy a React App with Firebase](https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425) | [Youtube](https://www.youtube.com/watch?v=1wZw7RvXPRU) |
-
-## Heroku
-
-|               Site                |                                                                    Docs                                                                     |                          Demo                          |
-| :-------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------: |
-| [Heroku](https://www.heroku.com/) | [Deploying React App on Heroku from GitHub](https://medium.com/make-it-heady/deploying-create-react-app-on-heroku-from-github-49447561f670) | [Youtube](https://www.youtube.com/watch?v=dn4mmfbletg) |
-
-## Github Pages
-
-|                   Site                    |                                                     Docs                                                      |                  Demo                   |
-| :---------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-------------------------------------: |
-| [GitHub Pages](https://pages.github.com/) | [Deploying React App on GitHub Pages from GitHub](https://create-react-app.dev/docs/deployment/#github-pages) | [Youtube](https://youtu.be/F8s4Ng-re0E) |
+**Reliability**  
+Firebase Analytics · Crashlytics · structured telemetry · error classification · CI/CD · automated testing
 
 ---
 
-# SEO :spider:
+## What I can help with
 
-### Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines.
+I am interested in work and collaboration around:
 
-### Add the below code snippet to `public/index.html` with your site info. This step is not mandatory
-
-<br />
-
-```html
-<meta name="description" content="--- SITE DESCRIPTION ---" />
-<meta property="og:image" content="--- YOUR IMAGE ---" />
-<meta property="og:site_name" content="--- YOUR NAME ---" />
-<meta property="og:title" content="--- YOUR NAME ---" />
-<meta property="og:url" content="--- YOUR SITE URL ---" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="--- SITE DESCRIPTION ---" />
-<meta property="og:locale" content="---  ---" />
-<meta property="og:image" content="--- YOUR IMAGE ---" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-
-<meta itemprop="name" content="--- YOUR NAME ---" />
-<meta itemprop="url" content="--- YOUR SITE URL ---" />
-<meta itemprop="description" content="--- SITE DESCRIPTION ---" />
-<meta itemprop="thumbnailUrl" content="" />
-<link rel="image_src" href="--- YOUR IMAGE ---" />
-<meta itemprop="image" content="--- YOUR IMAGE ---" />
-
-<meta name="twitter:site" content="@--- YOUR TWITTER USERNAME ---" />
-<meta name="twitter:creator" content="@--- YOUR TWITTER USERNAME ---" />
-<meta name="twitter:url" content="--- YOUR SITE URL ---" />
-<meta name="twitter:title" content="--- YOUR NAME ---" />
-<meta name="twitter:description" content="--- SITE DESCRIPTION ---" />
-<meta name="twitter:image" content="--- YOUR IMAGE ---" />
-<meta name="twitter:card" content="summary" />
-```
+- Applied AI / Agentic AI engineering
+- AI product architecture
+- AI-native mobile applications
+- Production RAG and knowledge systems
+- AWS AI and serverless architecture
+- Reliability and evaluation of LLM systems
+- AI developer tooling
+- Technical product consulting
 
 ---
 
-# Packages Used :package:
+## Selected public experiments
 
-|  Client Side Packages  |
-| :--------------------: |
-|   @material-ui/core    |
-|   @material-ui/icons   |
-|    @emailjs/browser    |
-|      react-lottie      |
-|   react-fast-marquee   |
-|      react-helmet      |
-|      react-icons       |
-|      react-reveal      |
-|    react-router-dom    |
-| react-router-hash-link |
-|     slick-carousel     |
-|       validator        |
+- **Local / edge AI** — [Gemma + LiteRT-LM + WebGPU](https://github.com/gopeshjangid/google-liteRT.js)
+- **Document intelligence** — [Unstructured documents to structured AI-ready data](https://github.com/gopeshjangid/all-converto-json)
+- **Native Android AI engineering** — production patterns around streaming, subscriptions, billing, observability, and AI-native UX
 
 ---
 
-# Fonts and Images :performing_arts:
-
-## Icons
-
-- [Material Icons](https://material-ui.com/components/material-icons/)
-- [React Icons](https://react-icons.github.io/react-icons/)
-
-## Fonts
-
-- [Poppins](https://fonts.google.com/specimen/Poppins)
-- [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- [Raleway](https://fonts.google.com/specimen/Raleway)
-- [Big Shoulders Text](https://fonts.google.com/specimen/Big+Shoulders+Text)
-- [Bestermind](https://www.dafont.com/bestermind.font)
-- [Roboto](https://fonts.google.com/specimen/Roboto)
-
----
-
-<!--
-# Contributors :man_technologist::woman_technologist:
-
-<div>
-    <table>
-        <tr>
-            <td align="center"><a href="https://github.com/said7388"><img src="https://i.ibb.co/ZmdNH6x/abu-said.jpg" width="135px;" height="135px;" alt=""/><br /><b>Abu Said</b></a></td>
-            <td align="center"><a href="https://github.com/hhhrrrttt222111"><img src="https://hhhrrrttt222111.web.app/static/media/dp.5f7c380f.jpeg" width="135px;" height="135px;" alt=""/><br /><b>Hemanth R</b></a></td>
-        </tr>
-    </table>
-</div> -->
-
-<!--
-## Setting Up Contacts form :envelope_with_arrow:
-
-> ### Follow these [instructions](https://github.com/hhhrrrttt222111/developer-portfolio/wiki/Contacts) to connect contacts form with Google Sheet
-
-
-
-
-
-
-# Upcoming Features :construction:
-
-- Light/Dark theme toggle
-- More illustrations to choose from
-- Achievements and Awards section
-- More fonts to choose from
-
-<br /><br />
-
-## Raise an issue for...
-
-- Found a bug
-- New theme
-- Can't find required skill in Skills section
-- Add new social media profile
-- Add new service
-- Add another section
-
-
-<br /> -->
+> I am most interested in building AI systems that survive contact with production: real users, unreliable networks, evolving models, security boundaries, latency constraints, and business requirements.
